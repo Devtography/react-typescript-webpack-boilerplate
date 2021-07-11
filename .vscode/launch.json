@@ -1,0 +1,37 @@
+{
+	"configurations": [
+		{
+			"name": "Attach to Chrome",
+			"port": 9222,
+			"request": "attach",
+			"type": "pwa-chrome",
+			"webRoot": "${workspaceFolder}"
+		},
+		{
+      "type": "chrome",
+      "request": "launch",
+      "name": "Launch Chrome",
+      "url": "http://localhost:3000",
+      "webRoot": "${workspaceFolder}",
+      "sourceMaps": true,
+      "trace": true,
+      "skipFiles": [
+        "node_modules/**"
+      ]
+		},
+    {
+      "type": "node",
+      "name": "Jest tests",
+      "request": "launch",
+      "runtimeExecutable": "npm",
+      "args": [
+          "run-script",
+          "test"
+      ],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "protocol": "inspector",
+      "internalConsoleOptions": "neverOpen",
+    },
+	]
+}

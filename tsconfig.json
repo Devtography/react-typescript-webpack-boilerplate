@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "module": "CommonJS",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "ES6",
+    "jsx": "react",
+    "alwaysStrict": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "strictBindCallApply": true,
+    "strictNullChecks": true,
+    "strictPropertyInitialization": true,
+    "moduleResolution": "node",
+    "typeRoots": [
+      "./node_modules/@types/**/*",
+      "./src/types/**/*"
+    ],
+    "outDir": "dist",
+    "baseUrl": ".",
+    "paths": {
+      "_/*": ["src/*"],
+      "_app/*": ["src/app/*"], 
+      "_types/*": ["src/types/*"],
+      "_utils/*": ["src/utils/*"],
+      "_public/*": ["public/*"]
+    }
+  },
+  "include": ["src/**/*"]
+}
